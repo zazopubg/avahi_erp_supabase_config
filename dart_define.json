@@ -1,0 +1,7 @@
+{
+  "APP_ENV": "dev",
+  "SUPABASE_URL": "https://axeclpbnwurfkxedbofb.supabase.co",
+  "SUPABASE_ANON_KEY": "sb_publishable_kqfsER1WgiQVnll7HS9D4A_yNPhDXDn",
+  "WEATHER_API_KEY": "",
+  "VERBOSE_LOGGING": true
+}

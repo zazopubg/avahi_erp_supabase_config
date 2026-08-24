@@ -1,0 +1,915 @@
+{
+  "@@locale": "en",
+
+  "appName": "Avahi",
+  "@appName": {
+    "description": "The application name as shown to the user"
+  },
+
+  "login": "Login",
+  "@login": {
+    "description": "Login button/title"
+  },
+
+  "logout": "Logout",
+  "@logout": {
+    "description": "Logout button/title"
+  },
+
+  "loading": "Loading...",
+  "@loading": {
+    "description": "Text shown during loading states"
+  },
+
+  "error": "Something went wrong",
+  "@error": {
+    "description": "Generic title for error states"
+  },
+
+  "retry": "Retry",
+  "@retry": {
+    "description": "Retry button after a failed operation"
+  },
+
+  "noConnection": "No internet connection",
+  "@noConnection": {
+    "description": "Message shown when network connectivity is lost"
+  },
+
+  "email": "Email",
+  "@email": {
+    "description": "Email field label"
+  },
+
+  "password": "Password",
+  "@password": {
+    "description": "Password field label"
+  },
+
+  "forgotPassword": "Forgot password?",
+  "@forgotPassword": {
+    "description": "Password recovery link/button on the login screen"
+  },
+
+  "sendResetLink": "Send reset link",
+  "@sendResetLink": {
+    "description": "Button to send a password reset email"
+  },
+
+  "checkYourEmail": "Check your email",
+  "@checkYourEmail": {
+    "description": "Success title after sending a password reset email"
+  },
+
+  "enterPin": "Enter PIN",
+  "@enterPin": {
+    "description": "Title of the quick PIN entry screen"
+  },
+
+  "createPin": "Create a PIN",
+  "@createPin": {
+    "description": "Title of the PIN creation mode"
+  },
+
+  "confirmPin": "Re-enter to confirm",
+  "@confirmPin": {
+    "description": "Title of the PIN confirmation mode when creating one"
+  },
+
+  "pinIncorrect": "Incorrect PIN.",
+  "@pinIncorrect": {
+    "description": "Error message when an incorrect PIN is entered"
+  },
+
+  "selectCompany": "Select company",
+  "@selectCompany": {
+    "description": "Title of the company selection screen for multiple memberships"
+  },
+
+  "switchAccount": "Sign in with another account",
+  "@switchAccount": {
+    "description": "Full sign-out button on the PIN screen to switch accounts"
+  },
+
+  "projects": "Projects",
+  "@projects": {
+    "description": "🆕 (Prompt 20) Title of the Projects navigation destination/feature"
+  },
+
+  "myProjects": "My Projects",
+  "@myProjects": {
+    "description": "🆕 (Prompt 20) Title of the mobile projects list screen"
+  },
+
+  "newProject": "New Project",
+  "@newProject": {
+    "description": "🆕 (Prompt 20) Button to create a new project"
+  },
+
+  "projectName": "Project Name",
+  "@projectName": {
+    "description": "🆕 (Prompt 20) Project name field label"
+  },
+
+  "projectCode": "Project Code",
+  "@projectCode": {
+    "description": "🆕 (Prompt 20) Project code field label"
+  },
+
+  "clientName": "Client Name",
+  "@clientName": {
+    "description": "🆕 (Prompt 20) Client name field label"
+  },
+
+  "projectStatusActive": "Active",
+  "@projectStatusActive": {
+    "description": "🆕 (Prompt 20) Project status label: active"
+  },
+
+  "projectStatusOnHold": "On Hold",
+  "@projectStatusOnHold": {
+    "description": "🆕 (Prompt 20) Project status label: on hold"
+  },
+
+  "projectStatusCompleted": "Completed",
+  "@projectStatusCompleted": {
+    "description": "🆕 (Prompt 20) Project status label: completed"
+  },
+
+  "projectStatusArchived": "Archived",
+  "@projectStatusArchived": {
+    "description": "🆕 (Prompt 20) Project status label: archived"
+  },
+
+  "projectMembers": "Project Team",
+  "@projectMembers": {
+    "description": "🆕 (Prompt 20) Title of the project team management screen"
+  },
+
+  "addMember": "Add Member",
+  "@addMember": {
+    "description": "🆕 (Prompt 20) Button to add a member to the project team"
+  },
+
+  "removeMember": "Remove from project",
+  "@removeMember": {
+    "description": "🆕 (Prompt 20) Button/action to remove a member from the project team"
+  },
+
+  "noAvailableMembers": "No available members",
+  "@noAvailableMembers": {
+    "description": "🆕 (Prompt 20) Empty-state message when no company members are available to add"
+  },
+
+  "projectMilestones": "Milestones",
+  "@projectMilestones": {
+    "description": "🆕 (Prompt 20) Title of the project milestones management screen"
+  },
+
+  "newMilestone": "New Milestone",
+  "@newMilestone": {
+    "description": "🆕 (Prompt 20) Button to create a new milestone"
+  },
+
+  "milestoneTitle": "Milestone Title",
+  "@milestoneTitle": {
+    "description": "🆕 (Prompt 20) Milestone title field label"
+  },
+
+  "milestoneDueDate": "Due Date",
+  "@milestoneDueDate": {
+    "description": "🆕 (Prompt 20) Milestone due date label"
+  },
+
+  "milestoneProgress": "Progress",
+  "@milestoneProgress": {
+    "description": "🆕 (Prompt 20) Milestone progress percentage label"
+  },
+
+  "milestoneStatusPending": "Pending",
+  "@milestoneStatusPending": {
+    "description": "🆕 (Prompt 20) Milestone status label: pending"
+  },
+
+  "milestoneStatusInProgress": "In Progress",
+  "@milestoneStatusInProgress": {
+    "description": "🆕 (Prompt 20) Milestone status label: in progress"
+  },
+
+  "milestoneStatusCompleted": "Completed",
+  "@milestoneStatusCompleted": {
+    "description": "🆕 (Prompt 20) Milestone status label: completed"
+  },
+
+  "milestoneStatusDelayed": "Delayed",
+  "@milestoneStatusDelayed": {
+    "description": "🆕 (Prompt 20) Milestone status label: delayed"
+  },
+
+  "projectSettings": "Project Settings",
+  "@projectSettings": {
+    "description": "🆕 (Prompt 20) Title of the basic project settings screen"
+  },
+
+  "geofenceRadius": "Geofence Radius (meters)",
+  "@geofenceRadius": {
+    "description": "🆕 (Prompt 20) Geofence radius field label used for attendance check-in"
+  },
+
+  "safetyGuidelines": "Description / Safety Guidelines",
+  "@safetyGuidelines": {
+    "description": "🆕 (Prompt 20) Field label for the general project description and safety guidelines"
+  },
+
+  "documentsTitle": "Documents",
+  "@documentsTitle": {
+    "description": "🆕 (Prompt 21) Title of the Documents navigation destination"
+  },
+
+  "documentsManagerTitle": "Document Management",
+  "@documentsManagerTitle": {
+    "description": "🆕 (Prompt 21) Title of the full document management screen (desktop)"
+  },
+
+  "uploadDocument": "Upload Document",
+  "@uploadDocument": {
+    "description": "🆕 (Prompt 21) Button to upload a new document"
+  },
+
+  "uploadNewVersion": "Upload New Version",
+  "@uploadNewVersion": {
+    "description": "🆕 (Prompt 21) Button to upload a new version of an existing document"
+  },
+
+  "documentTitleField": "File name",
+  "@documentTitleField": {
+    "description": "🆕 (Prompt 21) Label for the document title/name field in the upload form"
+  },
+
+  "documentCategory": "Category",
+  "@documentCategory": {
+    "description": "🆕 (Prompt 21) Label for the document category field/filter"
+  },
+
+  "documentDescription": "Description (optional)",
+  "@documentDescription": {
+    "description": "🆕 (Prompt 21) Label for the optional document description field"
+  },
+
+  "documentProject": "Project (optional)",
+  "@documentProject": {
+    "description": "🆕 (Prompt 21) Label for selecting the project linked to the document, or leaving it company-wide"
+  },
+
+  "documentCompanyWideOption": "Company-wide document",
+  "@documentCompanyWideOption": {
+    "description": "🆕 (Prompt 21) Description of the option to not link the document to any specific project"
+  },
+
+  "documentAllScope": "All documents",
+  "@documentAllScope": {
+    "description": "🆕 (Prompt 21) Description of the option to show documents across all projects and the company together"
+  },
+
+  "documentCompanyScope": "Company-wide documents",
+  "@documentCompanyScope": {
+    "description": "🆕 (Prompt 21) Description of the option to show only company-wide documents with no specific project"
+  },
+
+  "documentVersion": "Version",
+  "@documentVersion": {
+    "description": "🆕 (Prompt 21) Label for the document version number"
+  },
+
+  "documentArchived": "Archived",
+  "@documentArchived": {
+    "description": "🆕 (Prompt 21) Badge/description for an archived document's status"
+  },
+
+  "archiveDocument": "Archive Document",
+  "@archiveDocument": {
+    "description": "🆕 (Prompt 21) Button to archive a document"
+  },
+
+  "showArchivedDocuments": "Show archived documents",
+  "@showArchivedDocuments": {
+    "description": "🆕 (Prompt 21) Label for the toggle showing archived documents within the list"
+  },
+
+  "openInNewTab": "Open in new tab",
+  "@openInNewTab": {
+    "description": "🆕 (Prompt 21) Button to open the document in a new browser tab via a temporary signed link"
+  },
+
+  "documentSearchHint": "Search by document title or description...",
+  "@documentSearchHint": {
+    "description": "🆕 (Prompt 21) Placeholder text for the document search field"
+  },
+
+  "documentCategoryPlans": "Engineering Drawings",
+  "@documentCategoryPlans": {
+    "description": "🆕 (Prompt 21) Document category: engineering drawings"
+  },
+
+  "documentCategoryContracts": "Contracts",
+  "@documentCategoryContracts": {
+    "description": "🆕 (Prompt 21) Document category: contracts"
+  },
+
+  "documentCategoryReports": "Reports",
+  "@documentCategoryReports": {
+    "description": "🆕 (Prompt 21) Document category: reports"
+  },
+
+  "documentCategorySpecs": "Technical Specifications",
+  "@documentCategorySpecs": {
+    "description": "🆕 (Prompt 21) Document category: technical specifications"
+  },
+
+  "documentCategoryPermits": "Permits",
+  "@documentCategoryPermits": {
+    "description": "🆕 (Prompt 21) Document category: permits"
+  },
+
+  "documentCategoryInvoices": "Invoices",
+  "@documentCategoryInvoices": {
+    "description": "🆕 (Prompt 21) Document category: invoices"
+  },
+
+  "documentCategoryOther": "Other",
+  "@documentCategoryOther": {
+    "description": "🆕 (Prompt 21) Document category: other"
+  },
+
+  "documentUncategorized": "Uncategorized",
+  "@documentUncategorized": {
+    "description": "🆕 (Prompt 21) Title of the group of uncategorized documents in the category view"
+  },
+
+  "noDocumentsYet": "No documents yet",
+  "@noDocumentsYet": {
+    "description": "🆕 (Prompt 21) Empty state message when there are no documents at all"
+  },
+
+  "noDocumentsAvailable": "No documents available yet",
+  "@noDocumentsAvailable": {
+    "description": "🆕 (Prompt 21) Empty state message on the mobile (view-only) screen when there are no documents"
+  },
+
+  "documentUploadFailed": "Failed to upload the document, please try again.",
+  "@documentUploadFailed": {
+    "description": "🆕 (Prompt 21) Failure message when uploading a new document"
+  },
+
+  "documentVersionUploadFailed": "Failed to upload the new version.",
+  "@documentVersionUploadFailed": {
+    "description": "🆕 (Prompt 21) Failure message when uploading a new version of an existing document"
+  },
+
+  "documentArchiveConfirmTitle": "Archive Document",
+  "@documentArchiveConfirmTitle": {
+    "description": "🆕 (Prompt 21) Title of the confirmation dialog for archiving a document"
+  },
+
+  "documentNoPreviewAvailable": "No direct preview available for this type — use \"Open in new tab\".",
+  "@documentNoPreviewAvailable": {
+    "description": "🆕 (Prompt 21) Message shown when no in-app preview is available for the current file type"
+  },
+
+  "equipmentTitle": "Equipment",
+  "@equipmentTitle": {
+    "description": "🆕 (Prompt 22) Title of the Equipment navigation destination"
+  },
+
+  "myEquipmentTitle": "My Equipment",
+  "@myEquipmentTitle": {
+    "description": "🆕 (Prompt 22) Title of the current user's equipment screen (mobile)"
+  },
+
+  "equipmentRegistryTitle": "Equipment Registry",
+  "@equipmentRegistryTitle": {
+    "description": "🆕 (Prompt 22) Title of the full company equipment registry screen (desktop)"
+  },
+
+  "maintenanceScheduleTitle": "Maintenance Schedule",
+  "@maintenanceScheduleTitle": {
+    "description": "🆕 (Prompt 22) Title of the maintenance schedule section/tab for due equipment"
+  },
+
+  "logUsageHoursTitle": "Log Usage Hours",
+  "@logUsageHoursTitle": {
+    "description": "🆕 (Prompt 22) Title of the screen for logging a daily usage-hours reading for a piece of equipment"
+  },
+
+  "usageHoursCumulative": "Cumulative Usage Hours",
+  "@usageHoursCumulative": {
+    "description": "🆕 (Prompt 22) Label for a piece of equipment's cumulative usage hours field"
+  },
+
+  "additionalHoursToday": "Additional Hours Today",
+  "@additionalHoursToday": {
+    "description": "🆕 (Prompt 22) Label for the input field for additional usage hours logged today"
+  },
+
+  "equipmentStatusAvailable": "Available",
+  "@equipmentStatusAvailable": {
+    "description": "🆕 (Prompt 22) Equipment status label: available and unassigned"
+  },
+
+  "equipmentStatusInUse": "In Use",
+  "@equipmentStatusInUse": {
+    "description": "🆕 (Prompt 22) Equipment status label: currently in use"
+  },
+
+  "equipmentStatusMaintenance": "Maintenance",
+  "@equipmentStatusMaintenance": {
+    "description": "🆕 (Prompt 22) Equipment status label: temporarily out of service for maintenance"
+  },
+
+  "equipmentStatusRetired": "Retired",
+  "@equipmentStatusRetired": {
+    "description": "🆕 (Prompt 22) Equipment status label: permanently taken out of service"
+  },
+
+  "assignEquipmentTitle": "Assign Equipment",
+  "@assignEquipmentTitle": {
+    "description": "🆕 (Prompt 22) Title of the dialog for assigning equipment to a project or user"
+  },
+
+  "maintenanceOverdue": "Overdue",
+  "@maintenanceOverdue": {
+    "description": "🆕 (Prompt 22) Label for the section of equipment past its maintenance due date"
+  },
+
+  "maintenanceDueSoon": "Due Soon",
+  "@maintenanceDueSoon": {
+    "description": "🆕 (Prompt 22) Label for the section of equipment approaching its maintenance due date"
+  },
+
+  "sendToMaintenance": "Send to Maintenance",
+  "@sendToMaintenance": {
+    "description": "🆕 (Prompt 22) Button label for switching equipment status to \"maintenance\""
+  },
+
+  "completeMaintenance": "Complete Maintenance",
+  "@completeMaintenance": {
+    "description": "🆕 (Prompt 22) Button label for switching equipment status back to \"available\" after maintenance is done"
+  },
+
+  "maintenanceThresholdExceededWarning": "Warning: this equipment has exceeded the recommended maintenance threshold — scheduling maintenance soon is advised.",
+  "@maintenanceThresholdExceededWarning": {
+    "description": "🆕 (Prompt 22) Warning message shown when equipment usage hours exceed the recommended maintenance threshold"
+  },
+
+  "noEquipmentAssignedYet": "No equipment assigned to you yet",
+  "@noEquipmentAssignedYet": {
+    "description": "🆕 (Prompt 22) Empty-state message on the \"My Equipment\" screen when nothing is assigned"
+  },
+
+  "noMaintenanceDue": "No maintenance due",
+  "@noMaintenanceDue": {
+    "description": "🆕 (Prompt 22) Empty-state message in the maintenance schedule when nothing is due"
+  },
+
+  "notificationsTitle": "Notifications",
+  "@notificationsTitle": {
+    "description": "🆕 (Prompt 23) Title of the notifications center screen/panel"
+  },
+
+  "unreadOnlyFilterLabel": "Unread only",
+  "@unreadOnlyFilterLabel": {
+    "description": "🆕 (Prompt 23) Label for the unread-only notifications filter toggle"
+  },
+
+  "markAllAsReadAction": "Mark all as read",
+  "@markAllAsReadAction": {
+    "description": "🆕 (Prompt 23) Label for the action that marks every notification as read at once"
+  },
+
+  "viewAllNotificationsAction": "View all",
+  "@viewAllNotificationsAction": {
+    "description": "🆕 (Prompt 23) Label for the button that opens the full notifications screen from the dropdown panel"
+  },
+
+  "noNotificationsYet": "No notifications yet",
+  "@noNotificationsYet": {
+    "description": "🆕 (Prompt 23) Empty-state message when there are no notifications at all"
+  },
+
+  "noUnreadNotifications": "No unread notifications",
+  "@noUnreadNotifications": {
+    "description": "🆕 (Prompt 23) Empty-state message when the \"unread only\" filter is on and nothing matches"
+  },
+
+  "leaveRequestsTitle": "Leave Requests",
+  "@leaveRequestsTitle": {
+    "description": "🆕 (Prompt 24) Title of the personal leave-requests history screen (mobile)"
+  },
+
+  "leaveRequestsInboxTitle": "Leave Requests Inbox",
+  "@leaveRequestsInboxTitle": {
+    "description": "🆕 (Prompt 24) Title of the manager/admin leave-requests inbox panel (desktop)"
+  },
+
+  "createLeaveRequestTitle": "New Leave Request",
+  "@createLeaveRequestTitle": {
+    "description": "🆕 (Prompt 24) Title of the new leave request submission form"
+  },
+
+  "leaveRequestSubmitAction": "Submit Request",
+  "@leaveRequestSubmitAction": {
+    "description": "🆕 (Prompt 24) Label for the submit button on the leave request form"
+  },
+
+  "leaveStatusPending": "Pending approval",
+  "@leaveStatusPending": {
+    "description": "🆕 (Prompt 24) Label for a leave request awaiting the direct manager's review"
+  },
+
+  "leaveStatusApproved": "Approved",
+  "@leaveStatusApproved": {
+    "description": "🆕 (Prompt 24) Label for an approved leave request"
+  },
+
+  "leaveStatusRejected": "Rejected",
+  "@leaveStatusRejected": {
+    "description": "🆕 (Prompt 24) Label for a rejected leave request"
+  },
+
+  "leaveStatusCancelled": "Cancelled",
+  "@leaveStatusCancelled": {
+    "description": "🆕 (Prompt 24) Label for a leave request cancelled by its requester"
+  },
+
+  "leaveTypeAnnual": "Annual leave",
+  "@leaveTypeAnnual": {
+    "description": "🆕 (Prompt 24) Label for the annual leave type"
+  },
+
+  "leaveTypeSick": "Sick leave",
+  "@leaveTypeSick": {
+    "description": "🆕 (Prompt 24) Label for the sick leave type"
+  },
+
+  "leaveTypeEmergency": "Emergency leave",
+  "@leaveTypeEmergency": {
+    "description": "🆕 (Prompt 24) Label for the emergency leave type"
+  },
+
+  "leaveTypeUnpaid": "Unpaid leave",
+  "@leaveTypeUnpaid": {
+    "description": "🆕 (Prompt 24) Label for the unpaid leave type"
+  },
+
+  "leaveTypeOther": "Other",
+  "@leaveTypeOther": {
+    "description": "🆕 (Prompt 24) Label for an uncategorized leave type"
+  },
+
+  "leaveRejectionReasonRequired": "A rejection reason is required.",
+  "@leaveRejectionReasonRequired": {
+    "description": "🆕 (Prompt 24) Validation message: a reason is mandatory when rejecting a leave request"
+  },
+
+  "noLeaveRequestsYet": "No leave requests yet",
+  "@noLeaveRequestsYet": {
+    "description": "🆕 (Prompt 24) Empty-state message when the current user has no leave requests at all"
+  },
+
+  "noPendingLeaveRequests": "No leave requests pending approval",
+  "@noPendingLeaveRequests": {
+    "description": "🆕 (Prompt 24) Empty-state message in the leave requests inbox when no requests match the current filters"
+  },
+
+  "analyticsTitle": "Executive Analytics",
+  "@analyticsTitle": {
+    "description": "🆕 (Prompt 25) Title of the full executive analytics dashboard screen (`analytics_dashboard.dart`)"
+  },
+
+  "analyticsTabOverview": "Overview",
+  "@analyticsTabOverview": {
+    "description": "🆕 (Prompt 25) Label for the Overview tab within the analytics dashboard"
+  },
+
+  "analyticsTabProjects": "Projects",
+  "@analyticsTabProjects": {
+    "description": "🆕 (Prompt 25) Label for the detailed project analytics tab within the analytics dashboard"
+  },
+
+  "analyticsTabAttendance": "Attendance",
+  "@analyticsTabAttendance": {
+    "description": "🆕 (Prompt 25) Label for the detailed attendance analytics tab within the analytics dashboard"
+  },
+
+  "analyticsTabExport": "Export",
+  "@analyticsTabExport": {
+    "description": "🆕 (Prompt 25) Label for the export tab within the analytics dashboard"
+  },
+
+  "analyticsKpiActiveProjects": "Active projects",
+  "@analyticsKpiActiveProjects": {
+    "description": "🆕 (Prompt 25) Label for the active-projects-count KPI within `kpi_summary_row.dart`"
+  },
+
+  "analyticsKpiAverageProgress": "Average progress",
+  "@analyticsKpiAverageProgress": {
+    "description": "🆕 (Prompt 25) Label for the average completion percentage KPI across all projects within `kpi_summary_row.dart`"
+  },
+
+  "analyticsKpiOpenTasks": "Open tasks",
+  "@analyticsKpiOpenTasks": {
+    "description": "🆕 (Prompt 25) Label for the total open-tasks KPI across all projects"
+  },
+
+  "analyticsKpiOpenPunchItems": "Open punch items",
+  "@analyticsKpiOpenPunchItems": {
+    "description": "🆕 (Prompt 25) Label for the total open punch-list items KPI across all projects"
+  },
+
+  "analyticsKpiTodayAttendanceRate": "Avg. today's attendance rate",
+  "@analyticsKpiTodayAttendanceRate": {
+    "description": "🆕 (Prompt 25) Label for the average today's-attendance-rate KPI across all projects"
+  },
+
+  "analyticsKpiEquipmentInMaintenance": "Equipment in maintenance",
+  "@analyticsKpiEquipmentInMaintenance": {
+    "description": "🆕 (Prompt 25) Label for the count of company equipment currently under maintenance"
+  },
+
+  "analyticsProjectProgressChartTitle": "Project progress",
+  "@analyticsProjectProgressChartTitle": {
+    "description": "🆕 (Prompt 25) Title of the bar chart showing project completion percentages (`project_progress_chart.dart`)"
+  },
+
+  "analyticsTaskDistributionChartTitle": "Task status distribution",
+  "@analyticsTaskDistributionChartTitle": {
+    "description": "🆕 (Prompt 25) Title of the pie chart showing task status distribution (`task_distribution_chart.dart`)"
+  },
+
+  "analyticsAttendanceTrendChartTitle": "Daily attendance trend",
+  "@analyticsAttendanceTrendChartTitle": {
+    "description": "🆕 (Prompt 25) Title of the line chart showing the daily attendance trend (`attendance_trend_chart.dart`)"
+  },
+
+  "analyticsDateRangeLast7Days": "Last 7 days",
+  "@analyticsDateRangeLast7Days": {
+    "description": "🆕 (Prompt 25) Label for the last-7-days date range preset within `date_range_filter.dart`"
+  },
+
+  "analyticsDateRangeLast30Days": "Last 30 days",
+  "@analyticsDateRangeLast30Days": {
+    "description": "🆕 (Prompt 25) Label for the last-30-days date range preset within `date_range_filter.dart`"
+  },
+
+  "analyticsDateRangeLast90Days": "Last 90 days",
+  "@analyticsDateRangeLast90Days": {
+    "description": "🆕 (Prompt 25) Label for the last-90-days date range preset within `date_range_filter.dart`"
+  },
+
+  "analyticsDateRangeCustom": "Custom range",
+  "@analyticsDateRangeCustom": {
+    "description": "🆕 (Prompt 25) Label for the custom date range picker button within `date_range_filter.dart`"
+  },
+
+  "analyticsSelectProjectPrompt": "Select a project to view its analytics",
+  "@analyticsSelectProjectPrompt": {
+    "description": "🆕 (Prompt 25) Empty-state message shown when no project is selected within the `project_analytics.dart` tab"
+  },
+
+  "analyticsExportPdfAction": "Export PDF",
+  "@analyticsExportPdfAction": {
+    "description": "🆕 (Prompt 25) Label for the button that exports the dashboard as a PDF file within `export_analytics_screen.dart`"
+  },
+
+  "analyticsExportImageAction": "Export image",
+  "@analyticsExportImageAction": {
+    "description": "🆕 (Prompt 25) Label for the button that exports the dashboard as a PNG image within `export_analytics_screen.dart`"
+  },
+
+  "analyticsExportPdfSuccess": "The PDF file was opened for printing/saving.",
+  "@analyticsExportPdfSuccess": {
+    "description": "🆕 (Prompt 25) Success snackbar message after a successful PDF export — the browser's native print/save dialog opened"
+  },
+
+  "analyticsExportPdfFailure": "Could not export the PDF file.",
+  "@analyticsExportPdfFailure": {
+    "description": "🆕 (Prompt 25) Failure snackbar message for a failed PDF export"
+  },
+
+  "analyticsExportImageSuccess": "The dashboard image was downloaded.",
+  "@analyticsExportImageSuccess": {
+    "description": "🆕 (Prompt 25) Success snackbar message after a successful image export"
+  },
+
+  "analyticsExportImageFailure": "Could not export the image.",
+  "@analyticsExportImageFailure": {
+    "description": "🆕 (Prompt 25) Failure snackbar message for a failed image export"
+  },
+
+  "analyticsRetryLoad": "Could not load the analytics dashboard",
+  "@analyticsRetryLoad": {
+    "description": "🆕 (Prompt 25) `ErrorView` title shown when `AnalyticsCubit.loadInitial` fails entirely"
+  },
+
+  "usersTitle": "Users & Permissions",
+  "@usersTitle": {
+    "description": "🆕 (Prompt 26) `AppBar` title for `users_list.dart` (the single entry point for the `/users` route)"
+  },
+
+  "usersPermissionsMatrixTooltip": "Permissions matrix",
+  "@usersPermissionsMatrixTooltip": {
+    "description": "🆕 (Prompt 26) Tooltip for the button that opens `permissions_matrix.dart` from the users screen `AppBar`"
+  },
+
+  "usersInviteButton": "Invite user",
+  "@usersInviteButton": {
+    "description": "🆕 (Prompt 26) Label of the button that opens `invite_user.dart`, shown only to those with `Permission.usersInvite`"
+  },
+
+  "usersLoadingLabel": "Loading company members...",
+  "@usersLoadingLabel": {
+    "description": "🆕 (Prompt 26) `LoadingIndicator` label while `UsersCubit.loadInitial` is running"
+  },
+
+  "usersLoadError": "Could not load the users list",
+  "@usersLoadError": {
+    "description": "🆕 (Prompt 26) `ErrorView` title shown when `UsersCubit.loadInitial` fails entirely"
+  },
+
+  "usersSearchHint": "Search by name/phone/job title",
+  "@usersSearchHint": {
+    "description": "🆕 (Prompt 26) Label of the free-text search field in `users_list.dart`"
+  },
+
+  "usersRoleFilterLabel": "Role",
+  "@usersRoleFilterLabel": {
+    "description": "🆕 (Prompt 26) Label of the role filter dropdown in `users_list.dart`"
+  },
+
+  "usersRoleFilterAll": "All roles",
+  "@usersRoleFilterAll": {
+    "description": "🆕 (Prompt 26) Option that clears the role filter (shows every role together)"
+  },
+
+  "usersStatusFilterLabel": "Status",
+  "@usersStatusFilterLabel": {
+    "description": "🆕 (Prompt 26) Label of the status (active/inactive) filter dropdown"
+  },
+
+  "usersStatusFilterActive": "Active only",
+  "@usersStatusFilterActive": {
+    "description": "🆕 (Prompt 26) Filter option showing active members only — the default when the screen opens"
+  },
+
+  "usersStatusFilterInactive": "Inactive only",
+  "@usersStatusFilterInactive": {
+    "description": "🆕 (Prompt 26) Filter option showing inactive members only"
+  },
+
+  "usersStatusFilterAll": "All",
+  "@usersStatusFilterAll": {
+    "description": "🆕 (Prompt 26) Option that clears the status filter (shows active and inactive together)"
+  },
+
+  "usersEmptyTitle": "No matching members",
+  "@usersEmptyTitle": {
+    "description": "🆕 (Prompt 26) `EmptyState` title when no members match the current search/filters"
+  },
+
+  "usersEmptyMessage": "Try adjusting your search or filters.",
+  "@usersEmptyMessage": {
+    "description": "🆕 (Prompt 26) `EmptyState` message paired with `usersEmptyTitle`"
+  },
+
+  "usersYouBadge": "You",
+  "@usersYouBadge": {
+    "description": "🆕 (Prompt 26) Badge shown next to the current user's own row in `user_card.dart`/`user_details.dart`"
+  },
+
+  "usersInactiveBadge": "Inactive",
+  "@usersInactiveBadge": {
+    "description": "🆕 (Prompt 26) Status badge for a deactivated member (`!AppUser.isActive`) in `user_card.dart`/`user_details.dart`"
+  },
+
+  "usersPermissionsMatrixTitle": "Permissions by role",
+  "@usersPermissionsMatrixTitle": {
+    "description": "🆕 (Prompt 26) Title of the `permissions_matrix.dart` dialog"
+  },
+
+  "usersDetailJobTitle": "Job title",
+  "@usersDetailJobTitle": {
+    "description": "🆕 (Prompt 26) Label for the job title field in `user_details.dart`"
+  },
+
+  "usersDetailPhone": "Phone",
+  "@usersDetailPhone": {
+    "description": "🆕 (Prompt 26) Label for the phone field in `user_details.dart`"
+  },
+
+  "usersDetailJoinedAt": "Joined on",
+  "@usersDetailJoinedAt": {
+    "description": "🆕 (Prompt 26) Label for the joined-on date field (`AppUser.joinedAt`) in `user_details.dart`"
+  },
+
+  "usersEditRoleButton": "Edit role",
+  "@usersEditRoleButton": {
+    "description": "🆕 (Prompt 26) Label of the button that opens `user_roles_edit.dart`, shown only to those with `Permission.usersEditRoles`"
+  },
+
+  "usersDeactivateButton": "Deactivate member",
+  "@usersDeactivateButton": {
+    "description": "🆕 (Prompt 26) Label of the button to deactivate an active member in `user_details.dart`"
+  },
+
+  "usersReactivateButton": "Reactivate member",
+  "@usersReactivateButton": {
+    "description": "🆕 (Prompt 26) Label of the button to reactivate a deactivated member in `user_details.dart`"
+  },
+
+  "usersSelfEditNotice": "You can't edit your own role or deactivate your own account — ask another admin to do that.",
+  "@usersSelfEditNotice": {
+    "description": "🆕 (Prompt 26) Notice shown instead of action buttons when viewing the current user's own row in `user_details.dart`"
+  },
+
+  "usersDeactivateConfirmTitle": "Deactivate member",
+  "@usersDeactivateConfirmTitle": {
+    "description": "🆕 (Prompt 26) Title of the `AvahiDialog` confirming member deactivation"
+  },
+
+  "usersActivateConfirmTitle": "Activate member",
+  "@usersActivateConfirmTitle": {
+    "description": "🆕 (Prompt 26) Title of the `AvahiDialog` confirming member reactivation"
+  },
+
+  "usersStatusUpdateError": "Could not update the member's status.",
+  "@usersStatusUpdateError": {
+    "description": "🆕 (Prompt 26) `Snackbar` message when `UsersCubit.updateMemberStatus` fails"
+  },
+
+  "usersRoleEditTitle": "Edit member role",
+  "@usersRoleEditTitle": {
+    "description": "🆕 (Prompt 26) Title of the `user_roles_edit.dart` dialog"
+  },
+
+  "usersCurrentRoleLabel": "Current role",
+  "@usersCurrentRoleLabel": {
+    "description": "🆕 (Prompt 26) Label for the current (pre-edit) role in `user_roles_edit.dart`"
+  },
+
+  "usersNewRoleLabel": "New role",
+  "@usersNewRoleLabel": {
+    "description": "🆕 (Prompt 26) Label of the dropdown used to pick the new role in `user_roles_edit.dart`"
+  },
+
+  "usersRoleUpdateError": "Could not update the role, please try again.",
+  "@usersRoleUpdateError": {
+    "description": "🆕 (Prompt 26) `Snackbar` message when `UsersCubit.updateMemberRole` fails"
+  },
+
+  "usersInviteDialogTitle": "Invite a new user",
+  "@usersInviteDialogTitle": {
+    "description": "🆕 (Prompt 26) Title of the `invite_user.dart` dialog"
+  },
+
+  "usersInviteFullNameLabel": "Full name",
+  "@usersInviteFullNameLabel": {
+    "description": "🆕 (Prompt 26) Label for the full name field in `invite_user.dart`"
+  },
+
+  "usersInviteEmailLabel": "Email address",
+  "@usersInviteEmailLabel": {
+    "description": "🆕 (Prompt 26) Label for the email field in `invite_user.dart`"
+  },
+
+  "usersInviteJobTitleLabel": "Job title (optional)",
+  "@usersInviteJobTitleLabel": {
+    "description": "🆕 (Prompt 26) Label for the optional job title field in `invite_user.dart`"
+  },
+
+  "usersInvitePhoneLabel": "Phone (optional)",
+  "@usersInvitePhoneLabel": {
+    "description": "🆕 (Prompt 26) Label for the optional phone field in `invite_user.dart`"
+  },
+
+  "usersInviteSubmitButton": "Send invite",
+  "@usersInviteSubmitButton": {
+    "description": "🆕 (Prompt 26) Label of the submit button in `invite_user.dart`"
+  },
+
+  "usersInviteGenericError": "Could not send the invite, please try again.",
+  "@usersInviteGenericError": {
+    "description": "🆕 (Prompt 26) Fallback message when the invite fails without a specific message from the `invite-user` Edge Function"
+  },
+
+  "usersCancelButton": "Cancel",
+  "@usersCancelButton": {
+    "description": "🆕 (Prompt 26) Cancel button label shared between `user_roles_edit.dart`/`invite_user.dart`"
+  },
+
+  "usersSaveButton": "Save",
+  "@usersSaveButton": {
+    "description": "🆕 (Prompt 26) Save button label in `user_roles_edit.dart`"
+  }
+}
+
+

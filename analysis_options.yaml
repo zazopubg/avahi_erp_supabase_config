@@ -1,0 +1,86 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
+
+  errors:
+    invalid_annotation_target: ignore
+    todo: ignore
+    missing_required_param: error
+    missing_return: error
+    must_be_immutable: error
+
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "**/*.gr.dart"
+    - "**/*.config.dart"
+    - "build/**"
+    - "lib/generated/**"
+    - "l10n/generated/**"
+
+linter:
+  rules:
+    # ── Style ─────────────────────────────────────────────────
+    always_declare_return_types: true
+    always_put_required_named_parameters_first: true
+    annotate_overrides: true
+    avoid_print: true
+    avoid_empty_else: true
+    avoid_init_to_null: true
+    avoid_redundant_argument_values: true
+    avoid_return_types_on_setters: true
+    avoid_returning_null_for_void: true
+    avoid_shadowing_type_parameters: true
+    avoid_single_cascade_in_expression_statements: true
+    avoid_unnecessary_containers: true
+    avoid_void_async: false
+    await_only_futures: true
+    camel_case_types: true
+    cancel_subscriptions: true
+    close_sinks: true
+    curly_braces_in_flow_control_structures: true
+    directives_ordering: true
+    empty_catches: false
+    empty_constructor_bodies: true
+    exhaustive_cases: true
+    file_names: true
+    hash_and_equals: true
+    library_names: true
+    no_duplicate_case_values: true
+    non_constant_identifier_names: true
+    null_check_on_nullable_type_parameter: true
+    only_throw_errors: true
+    package_prefixed_library_names: true
+    prefer_const_constructors: true
+    prefer_const_constructors_in_immutables: true
+    prefer_const_declarations: true
+    prefer_const_literals_to_create_immutables: true
+    prefer_final_fields: true
+    prefer_final_in_for_each: true
+    prefer_final_locals: true
+    prefer_is_empty: true
+    prefer_is_not_empty: true
+    prefer_relative_imports: true
+    prefer_single_quotes: true
+    require_trailing_commas: true
+    sized_box_for_whitespace: true
+    sort_child_properties_last: true
+    sort_constructors_first: false
+    sort_unnamed_constructors_first: true
+    type_annotate_public_apis: true
+    unawaited_futures: true
+    unnecessary_await_in_return: true
+    unnecessary_brace_in_string_interps: true
+    unnecessary_const: true
+    unnecessary_new: true
+    unnecessary_null_checks: true
+    unnecessary_null_in_if_null_operators: true
+    unnecessary_this: true
+    use_key_in_widget_constructors: true
+    use_named_constants: true
+    use_super_parameters: true
+    valid_regexps: true

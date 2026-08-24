@@ -1,0 +1,7 @@
+{
+  "APP_ENV": "dev",
+  "SUPABASE_URL": "http://localhost:54321",
+  "SUPABASE_ANON_KEY": "REPLACE_WITH_ANON_KEY_FROM_backend/.env",
+  "WEATHER_API_KEY": "",
+  "VERBOSE_LOGGING": true
+}

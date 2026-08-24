@@ -1,0 +1,235 @@
+# ============================================================
+# backend/docker-compose.yml
+# تشغيل مكدّس Supabase كاملاً محلياً (بديل عن `supabase start` عند
+# عدم توفر Supabase CLI، مثلاً في بيئات CI أو خوادم تطوير مشتركة).
+#
+# يطابق الإعدادات الموجودة في backend/supabase/config.toml (المنافذ:
+# API=54321, DB=54322, Studio=54323, Inbucket=54324).
+#
+# الاستخدام:
+#   1) cp backend/.env.example backend/.env  ثم عدّل القيم عند الحاجة.
+#   2) cd backend && docker compose up -d
+#   3) Studio:  http://localhost:54323
+#      API:     http://localhost:54321
+#      DB:      postgresql://postgres:postgres@localhost:54322/postgres
+#      Inbucket (بريد تجريبي): http://localhost:54324
+#
+# عند أول تشغيل فقط (volume db-data فارغ)، تُطبَّق تلقائياً كل ملفات
+# backend/supabase/migrations/ ثم backend/supabase/seed/ عبر
+# backend/docker/00-run-migrations-and-seed.sh (انظر تعليقاته).
+# ============================================================
+
+name: avahi-backend
+
+services:
+  # ── قاعدة البيانات ───────────────────────────────────────────
+  db:
+    image: postgres:15-alpine
+    container_name: avahi-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      POSTGRES_DB: ${POSTGRES_DB:-postgres}
+    ports:
+      - "${POSTGRES_PORT:-54322}:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+      - ./supabase/migrations:/docker-entrypoint-initdb.d/migrations:ro
+      - ./supabase/seed:/docker-entrypoint-initdb.d/seed:ro
+      - ./docker/00-run-migrations-and-seed.sh:/docker-entrypoint-initdb.d/00-run-migrations-and-seed.sh:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    networks: [avahi-net]
+
+  # ── المصادقة (GoTrue) ────────────────────────────────────────
+  auth:
+    image: supabase/gotrue:v2.158.1
+    container_name: avahi-auth
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      GOTRUE_API_HOST: 0.0.0.0
+      GOTRUE_API_PORT: 9999
+      GOTRUE_DB_DRIVER: postgres
+      GOTRUE_DB_DATABASE_URL: postgres://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@db:5432/${POSTGRES_DB:-postgres}
+      GOTRUE_SITE_URL: ${SITE_URL:-http://localhost:3000}
+      GOTRUE_URI_ALLOW_LIST: "*"
+      GOTRUE_DISABLE_SIGNUP: "false"
+      GOTRUE_JWT_SECRET: ${JWT_SECRET}
+      GOTRUE_JWT_EXP: 3600
+      GOTRUE_JWT_DEFAULT_GROUP_NAME: authenticated
+      GOTRUE_EXTERNAL_EMAIL_ENABLED: "true"
+      GOTRUE_MAILER_AUTOCONFIRM: "true"
+      GOTRUE_SMTP_HOST: ${SMTP_HOST:-inbucket}
+      GOTRUE_SMTP_PORT: ${SMTP_PORT:-2500}
+      GOTRUE_SMTP_ADMIN_EMAIL: ${SMTP_ADMIN_EMAIL:-admin@avahi.dev}
+      GOTRUE_SMTP_SENDER_NAME: ${SMTP_SENDER_NAME:-Avahi (Local Dev)}
+    networks: [avahi-net]
+
+  # ── طبقة REST تلقائية فوق قاعدة البيانات (PostgREST) ─────────
+  rest:
+    image: postgrest/postgrest:v12.2.3
+    container_name: avahi-rest
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      PGRST_DB_URI: postgres://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@db:5432/${POSTGRES_DB:-postgres}
+      PGRST_DB_SCHEMAS: public,storage,graphql_public
+      PGRST_DB_ANON_ROLE: anon
+      PGRST_JWT_SECRET: ${JWT_SECRET}
+      PGRST_DB_USE_LEGACY_GUCS: "false"
+    networks: [avahi-net]
+
+  # ── الاشتراكات اللحظية (Realtime) ─────────────────────────────
+  realtime:
+    image: supabase/realtime:v2.30.34
+    container_name: avahi-realtime
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      PORT: 4000
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_USER: ${POSTGRES_USER:-postgres}
+      DB_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      DB_NAME: ${POSTGRES_DB:-postgres}
+      DB_AFTER_CONNECT_QUERY: "SET search_path TO _realtime"
+      DB_ENC_KEY: supabaselocaldevkey
+      API_JWT_SECRET: ${JWT_SECRET}
+      SECRET_KEY_BASE: supabaselocaldevsecretkeybase64charslongenoughvalue00
+      ERL_AFLAGS: -proto_dist inet_tcp
+      DNS_NODES: "''"
+      RLIMIT_NOFILE: 10000
+      APP_NAME: realtime
+    networks: [avahi-net]
+
+  # ── تخزين الملفات (Storage API) ────────────────────────────────
+  storage:
+    image: supabase/storage-api:v1.11.13
+    container_name: avahi-storage
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+      rest:
+        condition: service_started
+    environment:
+      ANON_KEY: ${ANON_KEY}
+      SERVICE_KEY: ${SERVICE_ROLE_KEY}
+      POSTGREST_URL: http://rest:3000
+      PGRST_JWT_SECRET: ${JWT_SECRET}
+      DATABASE_URL: postgres://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@db:5432/${POSTGRES_DB:-postgres}
+      FILE_SIZE_LIMIT: 15728640
+      STORAGE_BACKEND: file
+      FILE_STORAGE_BACKEND_PATH: /var/lib/storage
+      TENANT_ID: avahi
+      REGION: local
+      GLOBAL_S3_BUCKET: avahi
+    volumes:
+      - storage-data:/var/lib/storage
+    networks: [avahi-net]
+
+  # ── Edge Functions (backend/supabase/functions) ────────────────
+  functions:
+    image: supabase/edge-runtime:v1.58.2
+    container_name: avahi-functions
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      SUPABASE_URL: http://kong:8000
+      SUPABASE_ANON_KEY: ${ANON_KEY}
+      SUPABASE_SERVICE_ROLE_KEY: ${SERVICE_ROLE_KEY}
+      SUPABASE_DB_URL: postgres://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@db:5432/${POSTGRES_DB:-postgres}
+      DB_WEBHOOK_SECRET: ${DB_WEBHOOK_SECRET}
+      CRON_SECRET: ${CRON_SECRET}
+      EQUIPMENT_USAGE_HOURS_THRESHOLD: ${EQUIPMENT_USAGE_HOURS_THRESHOLD:-250}
+      EQUIPMENT_DUE_SOON_DAYS: ${EQUIPMENT_DUE_SOON_DAYS:-7}
+      EQUIPMENT_ALERT_DEDUPE_DAYS: ${EQUIPMENT_ALERT_DEDUPE_DAYS:-3}
+      VERIFY_JWT: "false" # التحقق الفعلي per-function يُدار عبر config.toml + functions/_shared/auth.ts
+    command:
+      - start
+      - --main-service
+      - /home/deno/functions
+    volumes:
+      - ./supabase/functions:/home/deno/functions:ro
+    networks: [avahi-net]
+
+  # ── بوابة API الموحّدة (Kong) ────────────────────────────────
+  kong:
+    image: kong:3.6-alpine
+    container_name: avahi-kong
+    restart: unless-stopped
+    depends_on: [auth, rest, realtime, storage, functions]
+    environment:
+      KONG_DATABASE: "off"
+      KONG_DECLARATIVE_CONFIG: /var/lib/kong/kong.yml
+      KONG_DNS_ORDER: LAST,A,CNAME
+      KONG_PLUGINS: request-transformer,cors,key-auth,acl
+    volumes:
+      - ./docker/kong.yml:/var/lib/kong/kong.yml:ro
+    ports:
+      - "${KONG_HTTP_PORT:-54321}:8000"
+    networks: [avahi-net]
+
+  # ── لوحة إدارة Supabase Studio ─────────────────────────────────
+  meta:
+    image: supabase/postgres-meta:v0.84.2
+    container_name: avahi-meta
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      PG_META_PORT: 8080
+      PG_META_DB_HOST: db
+      PG_META_DB_PORT: 5432
+      PG_META_DB_NAME: ${POSTGRES_DB:-postgres}
+      PG_META_DB_USER: ${POSTGRES_USER:-postgres}
+      PG_META_DB_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+    networks: [avahi-net]
+
+  studio:
+    image: supabase/studio:20240729-ce42139
+    container_name: avahi-studio
+    restart: unless-stopped
+    depends_on: [meta, kong]
+    environment:
+      STUDIO_PG_META_URL: http://meta:8080
+      SUPABASE_URL: http://kong:8000
+      SUPABASE_PUBLIC_URL: ${SUPABASE_PUBLIC_URL:-http://localhost:54321}
+      SUPABASE_ANON_KEY: ${ANON_KEY}
+      SUPABASE_SERVICE_ROLE_KEY: ${SERVICE_ROLE_KEY}
+      DEFAULT_ORGANIZATION_NAME: Avahi
+      DEFAULT_PROJECT_NAME: avahi
+    ports:
+      - "${STUDIO_PORT:-54323}:3000"
+    networks: [avahi-net]
+
+  # ── صندوق بريد تجريبي (لاختبار تأكيد الحسابات محلياً) ─────────
+  inbucket:
+    image: inbucket/inbucket:3.0.4
+    container_name: avahi-inbucket
+    restart: unless-stopped
+    ports:
+      - "${INBUCKET_PORT:-54324}:9000"
+    networks: [avahi-net]
+
+networks:
+  avahi-net:
+    driver: bridge
+
+volumes:
+  db-data:
+  storage-data:

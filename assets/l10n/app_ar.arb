@@ -1,0 +1,915 @@
+{
+  "@@locale": "ar",
+
+  "appName": "أفاهي",
+  "@appName": {
+    "description": "اسم التطبيق كما يظهر للمستخدم"
+  },
+
+  "login": "تسجيل الدخول",
+  "@login": {
+    "description": "زر/عنوان تسجيل الدخول"
+  },
+
+  "logout": "تسجيل الخروج",
+  "@logout": {
+    "description": "زر/عنوان تسجيل الخروج"
+  },
+
+  "loading": "جارٍ التحميل...",
+  "@loading": {
+    "description": "نص يظهر أثناء حالات التحميل"
+  },
+
+  "error": "حدث خطأ",
+  "@error": {
+    "description": "عنوان عام لحالات الخطأ"
+  },
+
+  "retry": "إعادة المحاولة",
+  "@retry": {
+    "description": "زر إعادة المحاولة بعد فشل عملية ما"
+  },
+
+  "noConnection": "لا يوجد اتصال بالإنترنت",
+  "@noConnection": {
+    "description": "رسالة تظهر عند فقدان الاتصال بالشبكة"
+  },
+
+  "email": "البريد الإلكتروني",
+  "@email": {
+    "description": "تسمية حقل البريد الإلكتروني"
+  },
+
+  "password": "كلمة المرور",
+  "@password": {
+    "description": "تسمية حقل كلمة المرور"
+  },
+
+  "forgotPassword": "نسيت كلمة المرور؟",
+  "@forgotPassword": {
+    "description": "رابط/زر استعادة كلمة المرور من شاشة تسجيل الدخول"
+  },
+
+  "sendResetLink": "إرسال رابط الاستعادة",
+  "@sendResetLink": {
+    "description": "زر إرسال رسالة إعادة تعيين كلمة المرور"
+  },
+
+  "checkYourEmail": "تحقّق من بريدك الإلكتروني",
+  "@checkYourEmail": {
+    "description": "عنوان نجاح إرسال رسالة استعادة كلمة المرور"
+  },
+
+  "enterPin": "أدخل رمز PIN",
+  "@enterPin": {
+    "description": "عنوان شاشة إدخال رمز PIN السريع"
+  },
+
+  "createPin": "أنشئ رمز PIN",
+  "@createPin": {
+    "description": "عنوان وضع إنشاء رمز PIN جديد"
+  },
+
+  "confirmPin": "أعد إدخال الرمز للتأكيد",
+  "@confirmPin": {
+    "description": "عنوان وضع تأكيد رمز PIN عند الإنشاء"
+  },
+
+  "pinIncorrect": "رمز PIN غير صحيح.",
+  "@pinIncorrect": {
+    "description": "رسالة خطأ عند إدخال رمز PIN خاطئ"
+  },
+
+  "selectCompany": "اختر الشركة",
+  "@selectCompany": {
+    "description": "عنوان شاشة اختيار الشركة عند تعدد العضويات"
+  },
+
+  "switchAccount": "تسجيل الدخول بحساب آخر",
+  "@switchAccount": {
+    "description": "زر تسجيل خروج كامل من شاشة PIN للدخول بحساب مختلف"
+  },
+
+  "projects": "المشاريع",
+  "@projects": {
+    "description": "🆕 (Prompt 20) عنوان وجهة/ميزة المشاريع في التنقل الرئيسي"
+  },
+
+  "myProjects": "مشاريعي",
+  "@myProjects": {
+    "description": "🆕 (Prompt 20) عنوان شاشة قائمة المشاريع على الهاتف"
+  },
+
+  "newProject": "مشروع جديد",
+  "@newProject": {
+    "description": "🆕 (Prompt 20) زر إنشاء مشروع جديد"
+  },
+
+  "projectName": "اسم المشروع",
+  "@projectName": {
+    "description": "🆕 (Prompt 20) تسمية حقل اسم المشروع"
+  },
+
+  "projectCode": "رمز المشروع",
+  "@projectCode": {
+    "description": "🆕 (Prompt 20) تسمية حقل رمز/كود المشروع"
+  },
+
+  "clientName": "اسم العميل",
+  "@clientName": {
+    "description": "🆕 (Prompt 20) تسمية حقل اسم العميل الخاص بالمشروع"
+  },
+
+  "projectStatusActive": "نشط",
+  "@projectStatusActive": {
+    "description": "🆕 (Prompt 20) تسمية حالة المشروع: نشط"
+  },
+
+  "projectStatusOnHold": "متوقف مؤقتاً",
+  "@projectStatusOnHold": {
+    "description": "🆕 (Prompt 20) تسمية حالة المشروع: متوقف مؤقتاً"
+  },
+
+  "projectStatusCompleted": "مكتمل",
+  "@projectStatusCompleted": {
+    "description": "🆕 (Prompt 20) تسمية حالة المشروع: مكتمل"
+  },
+
+  "projectStatusArchived": "مؤرشف",
+  "@projectStatusArchived": {
+    "description": "🆕 (Prompt 20) تسمية حالة المشروع: مؤرشف"
+  },
+
+  "projectMembers": "فريق العمل",
+  "@projectMembers": {
+    "description": "🆕 (Prompt 20) عنوان شاشة إدارة فريق عمل المشروع"
+  },
+
+  "addMember": "إضافة عضو",
+  "@addMember": {
+    "description": "🆕 (Prompt 20) زر إضافة عضو إلى فريق المشروع"
+  },
+
+  "removeMember": "إزالة من المشروع",
+  "@removeMember": {
+    "description": "🆕 (Prompt 20) زر/إجراء إزالة عضو من فريق المشروع"
+  },
+
+  "noAvailableMembers": "لا يوجد أعضاء متاحون",
+  "@noAvailableMembers": {
+    "description": "🆕 (Prompt 20) رسالة حالة فارغة عند عدم توفر أعضاء شركة قابلين للإضافة"
+  },
+
+  "projectMilestones": "المراحل الرئيسية",
+  "@projectMilestones": {
+    "description": "🆕 (Prompt 20) عنوان شاشة إدارة المراحل الرئيسية للمشروع"
+  },
+
+  "newMilestone": "مرحلة جديدة",
+  "@newMilestone": {
+    "description": "🆕 (Prompt 20) زر إنشاء مرحلة رئيسية جديدة"
+  },
+
+  "milestoneTitle": "عنوان المرحلة",
+  "@milestoneTitle": {
+    "description": "🆕 (Prompt 20) تسمية حقل عنوان المرحلة الرئيسية"
+  },
+
+  "milestoneDueDate": "تاريخ الاستحقاق",
+  "@milestoneDueDate": {
+    "description": "🆕 (Prompt 20) تسمية تاريخ استحقاق المرحلة الرئيسية"
+  },
+
+  "milestoneProgress": "نسبة الإنجاز",
+  "@milestoneProgress": {
+    "description": "🆕 (Prompt 20) تسمية نسبة إنجاز المرحلة الرئيسية"
+  },
+
+  "milestoneStatusPending": "لم يبدأ",
+  "@milestoneStatusPending": {
+    "description": "🆕 (Prompt 20) تسمية حالة المرحلة: لم يبدأ"
+  },
+
+  "milestoneStatusInProgress": "قيد التنفيذ",
+  "@milestoneStatusInProgress": {
+    "description": "🆕 (Prompt 20) تسمية حالة المرحلة: قيد التنفيذ"
+  },
+
+  "milestoneStatusCompleted": "مكتملة",
+  "@milestoneStatusCompleted": {
+    "description": "🆕 (Prompt 20) تسمية حالة المرحلة: مكتملة"
+  },
+
+  "milestoneStatusDelayed": "متأخرة",
+  "@milestoneStatusDelayed": {
+    "description": "🆕 (Prompt 20) تسمية حالة المرحلة: متأخرة"
+  },
+
+  "projectSettings": "إعدادات المشروع",
+  "@projectSettings": {
+    "description": "🆕 (Prompt 20) عنوان شاشة إعدادات المشروع الأساسية"
+  },
+
+  "geofenceRadius": "نصف قطر الجيوفنسينغ (بالأمتار)",
+  "@geofenceRadius": {
+    "description": "🆕 (Prompt 20) تسمية حقل نصف قطر منطقة الجيوفنسينغ لتسجيل الحضور"
+  },
+
+  "safetyGuidelines": "الوصف / إرشادات السلامة",
+  "@safetyGuidelines": {
+    "description": "🆕 (Prompt 20) تسمية حقل الوصف العام وإرشادات السلامة الخاصة بالمشروع"
+  },
+
+  "documentsTitle": "المستندات",
+  "@documentsTitle": {
+    "description": "🆕 (Prompt 21) عنوان شاشة/وجهة المستندات في التنقّل الرئيسي"
+  },
+
+  "documentsManagerTitle": "إدارة المستندات",
+  "@documentsManagerTitle": {
+    "description": "🆕 (Prompt 21) عنوان شاشة إدارة المستندات الكاملة (سطح المكتب)"
+  },
+
+  "uploadDocument": "رفع مستند",
+  "@uploadDocument": {
+    "description": "🆕 (Prompt 21) زر رفع مستند جديد"
+  },
+
+  "uploadNewVersion": "رفع إصدار جديد",
+  "@uploadNewVersion": {
+    "description": "🆕 (Prompt 21) زر رفع إصدار جديد لمستند قائم"
+  },
+
+  "documentTitleField": "اسم الملف",
+  "@documentTitleField": {
+    "description": "🆕 (Prompt 21) تسمية حقل عنوان/اسم المستند في نموذج الرفع"
+  },
+
+  "documentCategory": "التصنيف",
+  "@documentCategory": {
+    "description": "🆕 (Prompt 21) تسمية حقل/فلتر تصنيف المستند"
+  },
+
+  "documentDescription": "وصف (اختياري)",
+  "@documentDescription": {
+    "description": "🆕 (Prompt 21) تسمية حقل وصف المستند الاختياري"
+  },
+
+  "documentProject": "المشروع (اختياري)",
+  "@documentProject": {
+    "description": "🆕 (Prompt 21) تسمية حقل اختيار المشروع المرتبط بالمستند، أو تركه عاماً"
+  },
+
+  "documentCompanyWideOption": "مستند عام على مستوى الشركة",
+  "@documentCompanyWideOption": {
+    "description": "🆕 (Prompt 21) وصف خيار عدم ربط المستند بأي مشروع محدد"
+  },
+
+  "documentAllScope": "كل المستندات",
+  "@documentAllScope": {
+    "description": "🆕 (Prompt 21) وصف خيار عرض مستندات كل المشاريع والشركة معاً"
+  },
+
+  "documentCompanyScope": "مستندات الشركة العامة",
+  "@documentCompanyScope": {
+    "description": "🆕 (Prompt 21) وصف خيار عرض مستندات الشركة العامة فقط دون مشروع محدد"
+  },
+
+  "documentVersion": "الإصدار",
+  "@documentVersion": {
+    "description": "🆕 (Prompt 21) تسمية رقم إصدار المستند"
+  },
+
+  "documentArchived": "مؤرشف",
+  "@documentArchived": {
+    "description": "🆕 (Prompt 21) شارة/وصف حالة المستند المؤرشف"
+  },
+
+  "archiveDocument": "أرشفة المستند",
+  "@archiveDocument": {
+    "description": "🆕 (Prompt 21) زر أرشفة مستند"
+  },
+
+  "showArchivedDocuments": "إظهار المستندات المؤرشفة",
+  "@showArchivedDocuments": {
+    "description": "🆕 (Prompt 21) تسمية مفتاح تبديل إظهار المستندات المؤرشفة ضمن القائمة"
+  },
+
+  "openInNewTab": "فتح في نافذة جديدة",
+  "@openInNewTab": {
+    "description": "🆕 (Prompt 21) زر فتح المستند في تبويب متصفح جديد عبر رابط موقّت موقّع"
+  },
+
+  "documentSearchHint": "ابحث بعنوان أو وصف المستند...",
+  "@documentSearchHint": {
+    "description": "🆕 (Prompt 21) نص توضيحي لحقل بحث المستندات"
+  },
+
+  "documentCategoryPlans": "مخططات هندسية",
+  "@documentCategoryPlans": {
+    "description": "🆕 (Prompt 21) تصنيف مستند: مخططات هندسية"
+  },
+
+  "documentCategoryContracts": "عقود",
+  "@documentCategoryContracts": {
+    "description": "🆕 (Prompt 21) تصنيف مستند: عقود"
+  },
+
+  "documentCategoryReports": "تقارير",
+  "@documentCategoryReports": {
+    "description": "🆕 (Prompt 21) تصنيف مستند: تقارير"
+  },
+
+  "documentCategorySpecs": "مواصفات فنية",
+  "@documentCategorySpecs": {
+    "description": "🆕 (Prompt 21) تصنيف مستند: مواصفات فنية"
+  },
+
+  "documentCategoryPermits": "تصاريح",
+  "@documentCategoryPermits": {
+    "description": "🆕 (Prompt 21) تصنيف مستند: تصاريح"
+  },
+
+  "documentCategoryInvoices": "فواتير",
+  "@documentCategoryInvoices": {
+    "description": "🆕 (Prompt 21) تصنيف مستند: فواتير"
+  },
+
+  "documentCategoryOther": "أخرى",
+  "@documentCategoryOther": {
+    "description": "🆕 (Prompt 21) تصنيف مستند: أخرى"
+  },
+
+  "documentUncategorized": "بلا تصنيف",
+  "@documentUncategorized": {
+    "description": "🆕 (Prompt 21) عنوان مجموعة المستندات غير المصنَّفة ضمن العرض حسب التصنيف"
+  },
+
+  "noDocumentsYet": "لا توجد مستندات بعد",
+  "@noDocumentsYet": {
+    "description": "🆕 (Prompt 21) رسالة الحالة الفارغة عند عدم وجود مستندات إطلاقاً"
+  },
+
+  "noDocumentsAvailable": "لا توجد مستندات متاحة بعد",
+  "@noDocumentsAvailable": {
+    "description": "🆕 (Prompt 21) رسالة الحالة الفارغة في شاشة الهاتف (عرض فقط) عند عدم وجود مستندات"
+  },
+
+  "documentUploadFailed": "تعذّر رفع المستند، حاول مجدداً.",
+  "@documentUploadFailed": {
+    "description": "🆕 (Prompt 21) رسالة فشل رفع مستند جديد"
+  },
+
+  "documentVersionUploadFailed": "تعذّر رفع الإصدار الجديد.",
+  "@documentVersionUploadFailed": {
+    "description": "🆕 (Prompt 21) رسالة فشل رفع إصدار جديد لمستند قائم"
+  },
+
+  "documentArchiveConfirmTitle": "أرشفة المستند",
+  "@documentArchiveConfirmTitle": {
+    "description": "🆕 (Prompt 21) عنوان حوار تأكيد أرشفة مستند"
+  },
+
+  "documentNoPreviewAvailable": "لا تتوفر معاينة مباشرة لهذا النوع — استخدم \"فتح في نافذة جديدة\".",
+  "@documentNoPreviewAvailable": {
+    "description": "🆕 (Prompt 21) رسالة عدم توفر معاينة مباشرة داخل التطبيق لنوع الملف الحالي"
+  },
+
+  "equipmentTitle": "المعدات",
+  "@equipmentTitle": {
+    "description": "🆕 (Prompt 22) عنوان وجهة المعدات في التنقّل الرئيسي"
+  },
+
+  "myEquipmentTitle": "معداتي",
+  "@myEquipmentTitle": {
+    "description": "🆕 (Prompt 22) عنوان شاشة معدات المستخدم الحالي على الهاتف"
+  },
+
+  "equipmentRegistryTitle": "سجل المعدات",
+  "@equipmentRegistryTitle": {
+    "description": "🆕 (Prompt 22) عنوان شاشة سجل معدات الشركة الكامل على سطح المكتب"
+  },
+
+  "maintenanceScheduleTitle": "جدول الصيانة",
+  "@maintenanceScheduleTitle": {
+    "description": "🆕 (Prompt 22) عنوان قسم/تبويب جدول صيانة المعدات المستحقة"
+  },
+
+  "logUsageHoursTitle": "تسجيل ساعات تشغيل",
+  "@logUsageHoursTitle": {
+    "description": "🆕 (Prompt 22) عنوان شاشة تسجيل قراءة ساعات تشغيل يومية لمعدة"
+  },
+
+  "usageHoursCumulative": "ساعات التشغيل التراكمية",
+  "@usageHoursCumulative": {
+    "description": "🆕 (Prompt 22) تسمية حقل ساعات التشغيل التراكمية لمعدة"
+  },
+
+  "additionalHoursToday": "عدد الساعات المُضافة اليوم",
+  "@additionalHoursToday": {
+    "description": "🆕 (Prompt 22) تسمية حقل إدخال ساعات التشغيل الإضافية المُسجَّلة اليوم"
+  },
+
+  "equipmentStatusAvailable": "متاحة",
+  "@equipmentStatusAvailable": {
+    "description": "🆕 (Prompt 22) تسمية حالة معدة: متاحة وغير مُسندة"
+  },
+
+  "equipmentStatusInUse": "قيد الاستخدام",
+  "@equipmentStatusInUse": {
+    "description": "🆕 (Prompt 22) تسمية حالة معدة: قيد الاستخدام حالياً"
+  },
+
+  "equipmentStatusMaintenance": "صيانة",
+  "@equipmentStatusMaintenance": {
+    "description": "🆕 (Prompt 22) تسمية حالة معدة: خارج الخدمة مؤقتاً لأعمال صيانة"
+  },
+
+  "equipmentStatusRetired": "متقاعدة",
+  "@equipmentStatusRetired": {
+    "description": "🆕 (Prompt 22) تسمية حالة معدة: أُخرجت نهائياً من الخدمة"
+  },
+
+  "assignEquipmentTitle": "إسناد معدة",
+  "@assignEquipmentTitle": {
+    "description": "🆕 (Prompt 22) عنوان نافذة إسناد معدة لمشروع أو مستخدم"
+  },
+
+  "maintenanceOverdue": "متأخرة",
+  "@maintenanceOverdue": {
+    "description": "🆕 (Prompt 22) تسمية قسم المعدات المتجاوزة موعد صيانتها"
+  },
+
+  "maintenanceDueSoon": "مستحقة قريباً",
+  "@maintenanceDueSoon": {
+    "description": "🆕 (Prompt 22) تسمية قسم المعدات المقترب موعد صيانتها"
+  },
+
+  "sendToMaintenance": "إرسال للصيانة",
+  "@sendToMaintenance": {
+    "description": "🆕 (Prompt 22) تسمية زر تحويل حالة معدة إلى \"صيانة\""
+  },
+
+  "completeMaintenance": "إنجاز الصيانة",
+  "@completeMaintenance": {
+    "description": "🆕 (Prompt 22) تسمية زر إعادة حالة معدة إلى \"متاحة\" بعد إنجاز الصيانة"
+  },
+
+  "maintenanceThresholdExceededWarning": "تنبيه: تجاوزت هذه المعدة عتبة الصيانة الموصى بها — يُنصح بجدولة صيانة قريباً.",
+  "@maintenanceThresholdExceededWarning": {
+    "description": "🆕 (Prompt 22) رسالة تنبيه عند تجاوز ساعات تشغيل معدة عتبة الصيانة الموصى بها"
+  },
+
+  "noEquipmentAssignedYet": "لا توجد معدات مُسندة إليك بعد",
+  "@noEquipmentAssignedYet": {
+    "description": "🆕 (Prompt 22) رسالة حالة فارغة على شاشة \"معداتي\" عند عدم وجود معدات مُسندة"
+  },
+
+  "noMaintenanceDue": "لا توجد صيانة مستحقة",
+  "@noMaintenanceDue": {
+    "description": "🆕 (Prompt 22) رسالة حالة فارغة في جدول الصيانة عند عدم وجود معدات مستحقة"
+  },
+
+  "notificationsTitle": "الإشعارات",
+  "@notificationsTitle": {
+    "description": "🆕 (Prompt 23) عنوان شاشة/لوحة مركز الإشعارات"
+  },
+
+  "unreadOnlyFilterLabel": "غير المقروء فقط",
+  "@unreadOnlyFilterLabel": {
+    "description": "🆕 (Prompt 23) تسمية مفتاح تبديل تصفية الإشعارات غير المقروءة فقط"
+  },
+
+  "markAllAsReadAction": "تعليم الكل كمقروء",
+  "@markAllAsReadAction": {
+    "description": "🆕 (Prompt 23) تسمية زر/إجراء تعليم كل الإشعارات كمقروءة دفعة واحدة"
+  },
+
+  "viewAllNotificationsAction": "عرض الكل",
+  "@viewAllNotificationsAction": {
+    "description": "🆕 (Prompt 23) تسمية زر الانتقال من اللوحة المنسدلة إلى شاشة الإشعارات الكاملة"
+  },
+
+  "noNotificationsYet": "لا توجد إشعارات حالياً",
+  "@noNotificationsYet": {
+    "description": "🆕 (Prompt 23) رسالة حالة فارغة عند عدم وجود أي إشعارات إطلاقاً"
+  },
+
+  "noUnreadNotifications": "لا توجد إشعارات غير مقروءة",
+  "@noUnreadNotifications": {
+    "description": "🆕 (Prompt 23) رسالة حالة فارغة عند تفعيل فلتر \"غير المقروء فقط\" بلا نتائج"
+  },
+
+  "leaveRequestsTitle": "طلبات الإجازة",
+  "@leaveRequestsTitle": {
+    "description": "🆕 (Prompt 24) عنوان شاشة سجل طلبات الإجازة الشخصية (الهاتف)"
+  },
+
+  "leaveRequestsInboxTitle": "وارد طلبات الإجازة",
+  "@leaveRequestsInboxTitle": {
+    "description": "🆕 (Prompt 24) عنوان لوحة وارد طلبات الإجازة الإدارية (سطح المكتب)"
+  },
+
+  "createLeaveRequestTitle": "طلب إجازة جديد",
+  "@createLeaveRequestTitle": {
+    "description": "🆕 (Prompt 24) عنوان نموذج تقديم طلب إجازة جديد"
+  },
+
+  "leaveRequestSubmitAction": "إرسال الطلب",
+  "@leaveRequestSubmitAction": {
+    "description": "🆕 (Prompt 24) تسمية زر إرسال طلب الإجازة ضمن نموذج التقديم"
+  },
+
+  "leaveStatusPending": "بانتظار الاعتماد",
+  "@leaveStatusPending": {
+    "description": "🆕 (Prompt 24) تسمية حالة طلب إجازة بانتظار مراجعة المسؤول المباشر"
+  },
+
+  "leaveStatusApproved": "مقبولة",
+  "@leaveStatusApproved": {
+    "description": "🆕 (Prompt 24) تسمية حالة طلب إجازة تم اعتماده"
+  },
+
+  "leaveStatusRejected": "مرفوضة",
+  "@leaveStatusRejected": {
+    "description": "🆕 (Prompt 24) تسمية حالة طلب إجازة تم رفضه"
+  },
+
+  "leaveStatusCancelled": "ملغاة",
+  "@leaveStatusCancelled": {
+    "description": "🆕 (Prompt 24) تسمية حالة طلب إجازة ألغاه مقدّم الطلب"
+  },
+
+  "leaveTypeAnnual": "إجازة سنوية",
+  "@leaveTypeAnnual": {
+    "description": "🆕 (Prompt 24) تسمية نوع الإجازة السنوية"
+  },
+
+  "leaveTypeSick": "إجازة مرضية",
+  "@leaveTypeSick": {
+    "description": "🆕 (Prompt 24) تسمية نوع الإجازة المرضية"
+  },
+
+  "leaveTypeEmergency": "إجازة طارئة",
+  "@leaveTypeEmergency": {
+    "description": "🆕 (Prompt 24) تسمية نوع الإجازة الطارئة"
+  },
+
+  "leaveTypeUnpaid": "إجازة بدون راتب",
+  "@leaveTypeUnpaid": {
+    "description": "🆕 (Prompt 24) تسمية نوع الإجازة بدون راتب"
+  },
+
+  "leaveTypeOther": "أخرى",
+  "@leaveTypeOther": {
+    "description": "🆕 (Prompt 24) تسمية نوع إجازة أخرى غير مصنّفة"
+  },
+
+  "leaveRejectionReasonRequired": "سبب الرفض مطلوب.",
+  "@leaveRejectionReasonRequired": {
+    "description": "🆕 (Prompt 24) رسالة تحقّق: إلزامية إدخال سبب عند رفض طلب إجازة"
+  },
+
+  "noLeaveRequestsYet": "لا توجد طلبات إجازة بعد",
+  "@noLeaveRequestsYet": {
+    "description": "🆕 (Prompt 24) رسالة حالة فارغة عند عدم وجود أي طلبات إجازة للمستخدم الحالي"
+  },
+
+  "noPendingLeaveRequests": "لا توجد طلبات إجازة بانتظار الاعتماد",
+  "@noPendingLeaveRequests": {
+    "description": "🆕 (Prompt 24) رسالة حالة فارغة في وارد طلبات الإجازة عند عدم وجود طلبات مطابقة للفلاتر"
+  },
+
+  "analyticsTitle": "التحليلات التنفيذية",
+  "@analyticsTitle": {
+    "description": "🆕 (Prompt 25) عنوان شاشة لوحة التحليلات التنفيذية بالكامل (`analytics_dashboard.dart`)"
+  },
+
+  "analyticsTabOverview": "نظرة عامة",
+  "@analyticsTabOverview": {
+    "description": "🆕 (Prompt 25) تسمية لسان النظرة العامة ضمن لوحة التحليلات"
+  },
+
+  "analyticsTabProjects": "المشاريع",
+  "@analyticsTabProjects": {
+    "description": "🆕 (Prompt 25) تسمية لسان تحليلات المشاريع التفصيلية ضمن لوحة التحليلات"
+  },
+
+  "analyticsTabAttendance": "الحضور",
+  "@analyticsTabAttendance": {
+    "description": "🆕 (Prompt 25) تسمية لسان تحليلات الحضور التفصيلية ضمن لوحة التحليلات"
+  },
+
+  "analyticsTabExport": "التصدير",
+  "@analyticsTabExport": {
+    "description": "🆕 (Prompt 25) تسمية لسان تصدير اللوحة ضمن لوحة التحليلات"
+  },
+
+  "analyticsKpiActiveProjects": "المشاريع النشطة",
+  "@analyticsKpiActiveProjects": {
+    "description": "🆕 (Prompt 25) تسمية مؤشر عدد المشاريع النشطة ضمن `kpi_summary_row.dart`"
+  },
+
+  "analyticsKpiAverageProgress": "متوسط نسبة الإنجاز",
+  "@analyticsKpiAverageProgress": {
+    "description": "🆕 (Prompt 25) تسمية مؤشر متوسط نسبة إنجاز كل المشاريع ضمن `kpi_summary_row.dart`"
+  },
+
+  "analyticsKpiOpenTasks": "مهام مفتوحة",
+  "@analyticsKpiOpenTasks": {
+    "description": "🆕 (Prompt 25) تسمية مؤشر إجمالي المهام المفتوحة عبر كل المشاريع"
+  },
+
+  "analyticsKpiOpenPunchItems": "ملاحظات مفتوحة",
+  "@analyticsKpiOpenPunchItems": {
+    "description": "🆕 (Prompt 25) تسمية مؤشر إجمالي ملاحظات قوائم الفحص المفتوحة عبر كل المشاريع"
+  },
+
+  "analyticsKpiTodayAttendanceRate": "متوسط نسبة حضور اليوم",
+  "@analyticsKpiTodayAttendanceRate": {
+    "description": "🆕 (Prompt 25) تسمية مؤشر متوسط نسبة حضور اليوم عبر كل المشاريع"
+  },
+
+  "analyticsKpiEquipmentInMaintenance": "معدات قيد الصيانة",
+  "@analyticsKpiEquipmentInMaintenance": {
+    "description": "🆕 (Prompt 25) تسمية مؤشر عدد معدات الشركة الموجودة حالياً قيد الصيانة"
+  },
+
+  "analyticsProjectProgressChartTitle": "تقدّم المشاريع",
+  "@analyticsProjectProgressChartTitle": {
+    "description": "🆕 (Prompt 25) عنوان الرسم البياني الشريطي لنسب تقدّم المشاريع (`project_progress_chart.dart`)"
+  },
+
+  "analyticsTaskDistributionChartTitle": "توزيع حالات المهام",
+  "@analyticsTaskDistributionChartTitle": {
+    "description": "🆕 (Prompt 25) عنوان الرسم البياني الدائري لتوزيع حالات المهام (`task_distribution_chart.dart`)"
+  },
+
+  "analyticsAttendanceTrendChartTitle": "اتجاه الحضور اليومي",
+  "@analyticsAttendanceTrendChartTitle": {
+    "description": "🆕 (Prompt 25) عنوان الرسم البياني الخطي لاتجاه الحضور اليومي (`attendance_trend_chart.dart`)"
+  },
+
+  "analyticsDateRangeLast7Days": "آخر 7 أيام",
+  "@analyticsDateRangeLast7Days": {
+    "description": "🆕 (Prompt 25) تسمية اختصار مدى زمني: آخر 7 أيام ضمن `date_range_filter.dart`"
+  },
+
+  "analyticsDateRangeLast30Days": "آخر 30 يوماً",
+  "@analyticsDateRangeLast30Days": {
+    "description": "🆕 (Prompt 25) تسمية اختصار مدى زمني: آخر 30 يوماً ضمن `date_range_filter.dart`"
+  },
+
+  "analyticsDateRangeLast90Days": "آخر 90 يوماً",
+  "@analyticsDateRangeLast90Days": {
+    "description": "🆕 (Prompt 25) تسمية اختصار مدى زمني: آخر 90 يوماً ضمن `date_range_filter.dart`"
+  },
+
+  "analyticsDateRangeCustom": "مدى مخصّص",
+  "@analyticsDateRangeCustom": {
+    "description": "🆕 (Prompt 25) تسمية زر اختيار مدى زمني مخصّص ضمن `date_range_filter.dart`"
+  },
+
+  "analyticsSelectProjectPrompt": "اختر مشروعاً لعرض تحليلاته",
+  "@analyticsSelectProjectPrompt": {
+    "description": "🆕 (Prompt 25) رسالة حالة فارغة عند عدم اختيار أي مشروع ضمن لسان `project_analytics.dart`"
+  },
+
+  "analyticsExportPdfAction": "تصدير PDF",
+  "@analyticsExportPdfAction": {
+    "description": "🆕 (Prompt 25) تسمية زر تصدير اللوحة كملف PDF ضمن `export_analytics_screen.dart`"
+  },
+
+  "analyticsExportImageAction": "تصدير صورة",
+  "@analyticsExportImageAction": {
+    "description": "🆕 (Prompt 25) تسمية زر تصدير اللوحة كصورة PNG ضمن `export_analytics_screen.dart`"
+  },
+
+  "analyticsExportPdfSuccess": "تم فتح ملف PDF للطباعة/الحفظ.",
+  "@analyticsExportPdfSuccess": {
+    "description": "🆕 (Prompt 25) رسالة نجاح تصدير PDF (Snackbar) — حوار الطباعة/الحفظ الأصلي للمتصفح فُتح بنجاح"
+  },
+
+  "analyticsExportPdfFailure": "تعذّر تصدير ملف PDF.",
+  "@analyticsExportPdfFailure": {
+    "description": "🆕 (Prompt 25) رسالة فشل تصدير PDF (Snackbar)"
+  },
+
+  "analyticsExportImageSuccess": "تم تنزيل صورة اللوحة.",
+  "@analyticsExportImageSuccess": {
+    "description": "🆕 (Prompt 25) رسالة نجاح تصدير صورة (Snackbar)"
+  },
+
+  "analyticsExportImageFailure": "تعذّر تصدير الصورة.",
+  "@analyticsExportImageFailure": {
+    "description": "🆕 (Prompt 25) رسالة فشل تصدير صورة (Snackbar)"
+  },
+
+  "analyticsRetryLoad": "تعذّر تحميل لوحة التحليلات",
+  "@analyticsRetryLoad": {
+    "description": "🆕 (Prompt 25) عنوان `ErrorView` عند فشل `AnalyticsCubit.loadInitial` بالكامل"
+  },
+
+  "usersTitle": "المستخدمون والصلاحيات",
+  "@usersTitle": {
+    "description": "🆕 (Prompt 26) عنوان `AppBar` لشاشة `users_list.dart` (نقطة الدخول الوحيدة لمسار `/users`)"
+  },
+
+  "usersPermissionsMatrixTooltip": "جدول الصلاحيات",
+  "@usersPermissionsMatrixTooltip": {
+    "description": "🆕 (Prompt 26) تلميح زر فتح `permissions_matrix.dart` ضمن `AppBar` شاشة المستخدمين"
+  },
+
+  "usersInviteButton": "دعوة مستخدم",
+  "@usersInviteButton": {
+    "description": "🆕 (Prompt 26) نص زر فتح `invite_user.dart`، يظهر فقط لمن يملك `Permission.usersInvite`"
+  },
+
+  "usersLoadingLabel": "جارٍ تحميل أعضاء الشركة...",
+  "@usersLoadingLabel": {
+    "description": "🆕 (Prompt 26) نص `LoadingIndicator` أثناء `UsersCubit.loadInitial`"
+  },
+
+  "usersLoadError": "تعذّر تحميل قائمة المستخدمين",
+  "@usersLoadError": {
+    "description": "🆕 (Prompt 26) عنوان `ErrorView` عند فشل `UsersCubit.loadInitial` بالكامل"
+  },
+
+  "usersSearchHint": "بحث بالاسم/الهاتف/المسمى الوظيفي",
+  "@usersSearchHint": {
+    "description": "🆕 (Prompt 26) تسمية حقل البحث الحر ضمن `users_list.dart`"
+  },
+
+  "usersRoleFilterLabel": "الدور",
+  "@usersRoleFilterLabel": {
+    "description": "🆕 (Prompt 26) تسمية قائمة تصفية الدور المنسدلة ضمن `users_list.dart`"
+  },
+
+  "usersRoleFilterAll": "كل الأدوار",
+  "@usersRoleFilterAll": {
+    "description": "🆕 (Prompt 26) خيار إلغاء تصفية الدور (عرض كل الأدوار معاً)"
+  },
+
+  "usersStatusFilterLabel": "الحالة",
+  "@usersStatusFilterLabel": {
+    "description": "🆕 (Prompt 26) تسمية قائمة تصفية الحالة (نشط/معطَّل) المنسدلة"
+  },
+
+  "usersStatusFilterActive": "النشطون فقط",
+  "@usersStatusFilterActive": {
+    "description": "🆕 (Prompt 26) خيار تصفية الأعضاء النشطين فقط — الافتراضي عند فتح الشاشة"
+  },
+
+  "usersStatusFilterInactive": "المعطَّلون فقط",
+  "@usersStatusFilterInactive": {
+    "description": "🆕 (Prompt 26) خيار تصفية الأعضاء المعطَّلين فقط"
+  },
+
+  "usersStatusFilterAll": "الكل",
+  "@usersStatusFilterAll": {
+    "description": "🆕 (Prompt 26) خيار إلغاء تصفية الحالة (عرض النشطين والمعطَّلين معاً)"
+  },
+
+  "usersEmptyTitle": "لا يوجد أعضاء مطابقون",
+  "@usersEmptyTitle": {
+    "description": "🆕 (Prompt 26) عنوان `EmptyState` عند عدم وجود نتائج مطابقة للبحث/التصفية"
+  },
+
+  "usersEmptyMessage": "جرّب تعديل البحث أو معايير التصفية.",
+  "@usersEmptyMessage": {
+    "description": "🆕 (Prompt 26) وصف `EmptyState` المرافق لـ `usersEmptyTitle`"
+  },
+
+  "usersYouBadge": "أنت",
+  "@usersYouBadge": {
+    "description": "🆕 (Prompt 26) شارة تُعرض بجانب اسم المستخدم الحالي نفسه ضمن `user_card.dart`/`user_details.dart`"
+  },
+
+  "usersInactiveBadge": "معطَّل",
+  "@usersInactiveBadge": {
+    "description": "🆕 (Prompt 26) شارة الحالة لعضو معطَّل (`!AppUser.isActive`) ضمن `user_card.dart`/`user_details.dart`"
+  },
+
+  "usersPermissionsMatrixTitle": "جدول الصلاحيات حسب الدور",
+  "@usersPermissionsMatrixTitle": {
+    "description": "🆕 (Prompt 26) عنوان نافذة `permissions_matrix.dart` المنبثقة"
+  },
+
+  "usersDetailJobTitle": "المسمى الوظيفي",
+  "@usersDetailJobTitle": {
+    "description": "🆕 (Prompt 26) تسمية حقل المسمى الوظيفي ضمن `user_details.dart`"
+  },
+
+  "usersDetailPhone": "الهاتف",
+  "@usersDetailPhone": {
+    "description": "🆕 (Prompt 26) تسمية حقل الهاتف ضمن `user_details.dart`"
+  },
+
+  "usersDetailJoinedAt": "تاريخ الانضمام",
+  "@usersDetailJoinedAt": {
+    "description": "🆕 (Prompt 26) تسمية حقل تاريخ الانضمام (`AppUser.joinedAt`) ضمن `user_details.dart`"
+  },
+
+  "usersEditRoleButton": "تعديل الدور",
+  "@usersEditRoleButton": {
+    "description": "🆕 (Prompt 26) نص زر فتح `user_roles_edit.dart`، يظهر فقط لمن يملك `Permission.usersEditRoles`"
+  },
+
+  "usersDeactivateButton": "تعطيل العضو",
+  "@usersDeactivateButton": {
+    "description": "🆕 (Prompt 26) نص زر تعطيل عضو نشط ضمن `user_details.dart`"
+  },
+
+  "usersReactivateButton": "إعادة تفعيل العضو",
+  "@usersReactivateButton": {
+    "description": "🆕 (Prompt 26) نص زر إعادة تفعيل عضو معطَّل ضمن `user_details.dart`"
+  },
+
+  "usersSelfEditNotice": "لا يمكنك تعديل دورك أو تعطيل حسابك بنفسك — اطلب من مدير نظام آخر إجراء ذلك.",
+  "@usersSelfEditNotice": {
+    "description": "🆕 (Prompt 26) رسالة توضيحية تُعرض بدل أزرار الإجراءات عند عرض العضو الحالي نفسه في `user_details.dart`"
+  },
+
+  "usersDeactivateConfirmTitle": "تعطيل العضو",
+  "@usersDeactivateConfirmTitle": {
+    "description": "🆕 (Prompt 26) عنوان `AvahiDialog` تأكيد تعطيل عضو"
+  },
+
+  "usersActivateConfirmTitle": "تفعيل العضو",
+  "@usersActivateConfirmTitle": {
+    "description": "🆕 (Prompt 26) عنوان `AvahiDialog` تأكيد إعادة تفعيل عضو"
+  },
+
+  "usersStatusUpdateError": "تعذّر تحديث حالة العضو.",
+  "@usersStatusUpdateError": {
+    "description": "🆕 (Prompt 26) رسالة `Snackbar` عند فشل `UsersCubit.updateMemberStatus`"
+  },
+
+  "usersRoleEditTitle": "تعديل دور العضو",
+  "@usersRoleEditTitle": {
+    "description": "🆕 (Prompt 26) عنوان نافذة `user_roles_edit.dart`"
+  },
+
+  "usersCurrentRoleLabel": "الدور الحالي",
+  "@usersCurrentRoleLabel": {
+    "description": "🆕 (Prompt 26) تسمية الدور الحالي (قبل التعديل) ضمن `user_roles_edit.dart`"
+  },
+
+  "usersNewRoleLabel": "الدور الجديد",
+  "@usersNewRoleLabel": {
+    "description": "🆕 (Prompt 26) تسمية القائمة المنسدلة لاختيار الدور الجديد ضمن `user_roles_edit.dart`"
+  },
+
+  "usersRoleUpdateError": "تعذّر تحديث الدور، حاول مجدداً.",
+  "@usersRoleUpdateError": {
+    "description": "🆕 (Prompt 26) رسالة `Snackbar` عند فشل `UsersCubit.updateMemberRole`"
+  },
+
+  "usersInviteDialogTitle": "دعوة مستخدم جديد",
+  "@usersInviteDialogTitle": {
+    "description": "🆕 (Prompt 26) عنوان نافذة `invite_user.dart`"
+  },
+
+  "usersInviteFullNameLabel": "الاسم الكامل",
+  "@usersInviteFullNameLabel": {
+    "description": "🆕 (Prompt 26) تسمية حقل الاسم الكامل ضمن `invite_user.dart`"
+  },
+
+  "usersInviteEmailLabel": "البريد الإلكتروني",
+  "@usersInviteEmailLabel": {
+    "description": "🆕 (Prompt 26) تسمية حقل البريد الإلكتروني ضمن `invite_user.dart`"
+  },
+
+  "usersInviteJobTitleLabel": "المسمى الوظيفي (اختياري)",
+  "@usersInviteJobTitleLabel": {
+    "description": "🆕 (Prompt 26) تسمية حقل المسمى الوظيفي الاختياري ضمن `invite_user.dart`"
+  },
+
+  "usersInvitePhoneLabel": "الهاتف (اختياري)",
+  "@usersInvitePhoneLabel": {
+    "description": "🆕 (Prompt 26) تسمية حقل الهاتف الاختياري ضمن `invite_user.dart`"
+  },
+
+  "usersInviteSubmitButton": "إرسال الدعوة",
+  "@usersInviteSubmitButton": {
+    "description": "🆕 (Prompt 26) نص زر إرسال الدعوة ضمن `invite_user.dart`"
+  },
+
+  "usersInviteGenericError": "تعذّر إرسال الدعوة، حاول مجدداً.",
+  "@usersInviteGenericError": {
+    "description": "🆕 (Prompt 26) رسالة احتياطية عند فشل الدعوة دون رسالة محددة من `invite-user` Edge Function"
+  },
+
+  "usersCancelButton": "إلغاء",
+  "@usersCancelButton": {
+    "description": "🆕 (Prompt 26) نص زر الإلغاء المشترك بين نوافذ `user_roles_edit.dart`/`invite_user.dart`"
+  },
+
+  "usersSaveButton": "حفظ",
+  "@usersSaveButton": {
+    "description": "🆕 (Prompt 26) نص زر الحفظ ضمن `user_roles_edit.dart`"
+  }
+}
+
+

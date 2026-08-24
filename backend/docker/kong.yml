@@ -1,0 +1,76 @@
+# ============================================================
+# backend/docker/kong.yml
+# إعداد تصريحي (Declarative Config) لبوابة Kong، توجّه كل الطلبات
+# القادمة على المنفذ الموحّد (54321) إلى الخدمة الداخلية الصحيحة،
+# وتفرض مصادقة key-auth عبر مفاتيح anon/service_role (نفس القيم
+# الموجودة في backend/.env → ANON_KEY / SERVICE_ROLE_KEY).
+#
+# المسارات النهائية المتاحة للعميل (Flutter):
+#   /auth/v1/*       → GoTrue (تسجيل الدخول، إدارة المستخدمين)
+#   /rest/v1/*       → PostgREST (CRUD تلقائي على جداول public)
+#   /realtime/v1/*   → Realtime (اشتراكات لحظية عبر WebSocket)
+#   /storage/v1/*    → Storage API (رفع/تنزيل الملفات)
+#   /functions/v1/*  → Edge Functions (create-company, attendance-guard...)
+# ============================================================
+
+_format_version: "3.0"
+
+consumers:
+  - username: anon
+    keyauth_credentials:
+      - key: ${ANON_KEY}
+  - username: service_role
+    keyauth_credentials:
+      - key: ${SERVICE_ROLE_KEY}
+
+acls:
+  - consumer: anon
+    group: anon
+  - consumer: service_role
+    group: admin
+
+services:
+  - name: auth-v1
+    url: http://auth:9999
+    routes:
+      - name: auth-v1-route
+        strip_path: true
+        paths: ["/auth/v1"]
+    plugins:
+      - name: cors
+
+  - name: rest-v1
+    url: http://rest:3000
+    routes:
+      - name: rest-v1-route
+        strip_path: true
+        paths: ["/rest/v1"]
+    plugins:
+      - name: cors
+
+  - name: realtime-v1
+    url: http://realtime:4000/socket
+    routes:
+      - name: realtime-v1-route
+        strip_path: true
+        paths: ["/realtime/v1"]
+    plugins:
+      - name: cors
+
+  - name: storage-v1
+    url: http://storage:5000
+    routes:
+      - name: storage-v1-route
+        strip_path: true
+        paths: ["/storage/v1"]
+    plugins:
+      - name: cors
+
+  - name: functions-v1
+    url: http://functions:9000
+    routes:
+      - name: functions-v1-route
+        strip_path: true
+        paths: ["/functions/v1"]
+    plugins:
+      - name: cors

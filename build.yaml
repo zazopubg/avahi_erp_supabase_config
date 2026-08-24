@@ -1,0 +1,26 @@
+targets:
+  $default:
+    builders:
+      # ── freezed / json_serializable ─────────────────────────
+      json_serializable:
+        options:
+          explicit_to_json: true
+          field_rename: snake
+          create_factory: true
+          create_to_json: true
+          generic_argument_factories: false
+
+      # ── injectable (Dependency Injection) ───────────────────
+      injectable_generator:injectable_builder:
+        generate_for:
+          - lib/**/*.dart
+        options:
+          auto_register: true
+
+      # ── drift (قاعدة البيانات المحلية) ──────────────────────
+      drift_dev:
+        options:
+          store_date_time_values_as_text: true
+          named_parameters: true
+          scoped_dart_components: true
+          write_from_json_string_constructor: true
